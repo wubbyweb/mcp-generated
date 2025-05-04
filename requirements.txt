@@ -1,0 +1,2 @@
+twilio
+fastmcp[twilio,dotenv]
