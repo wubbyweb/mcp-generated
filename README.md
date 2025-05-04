@@ -62,6 +62,8 @@ This project provides a simple FastMCP server that allows sending WhatsApp messa
         ```
     *   **Important:** Replace the placeholder values with your actual credentials and number. Ensure the `TWILIO_WHATSAPP_NUMBER` starts with a `+` and includes the country code (E.164 format). The `whatsapp_server.py` script will automatically add the `+` if it's missing from the `.env` file.
         ❗
+    *   **Trial Account Note:** If you are using a Twilio trial account, the `TWILIO_WHATSAPP_NUMBER` will likely be the Twilio Sandbox number (`+14155238886`). You *must* enroll any recipient (`to_number`) phone numbers in your Twilio Sandbox via the Twilio console for messages to be delivered successfully. Sending to non-enrolled numbers requires upgrading your Twilio account.
+
 ## Usage
 
 ### 1. Running the FastMCP Server
